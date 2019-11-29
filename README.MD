@@ -27,7 +27,7 @@ docker-compose up -d
 docker-compose down
 ```
 
-
+#### 2.4 БД
 Загрузить дамп БД (находится в корне проекта) можно через phpMyAdmin
 
 http://localhost:8080/
