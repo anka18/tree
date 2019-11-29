@@ -1,0 +1,59 @@
+.form {
+  display: none;
+}
+
+.form.active {
+  display: initial;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.left, .right {
+  flex: 50%;
+  padding: 20px;
+}
+
+.left ul {
+  background-color: white;
+  color: black;
+}
+
+.left div {
+  background-color: white!important;
+  color: black;
+}
+
+.right label span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.right label input {
+  padding: 4px 7px;
+  border: none;
+  border: 1px solid #c3c3c3;
+  outline: none;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.right button {
+  color: black;
+  box-shadow: none;
+  background-color: #c3c3c3;
+  border: none;
+  padding: 6px 18px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  font-size: 14px;
+}
+
+.right .btn:disabled  {
+  color: #00000052;
+  background-color: #e0dfdf;
+}
