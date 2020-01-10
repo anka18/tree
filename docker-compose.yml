@@ -8,9 +8,11 @@ services:
         restart: 'always'
         ports:
             - 9090:80
+            - 8000:8000
         links:
             - mysql
         volumes:
+            - /home/:/home/
             - ./api/:/var/www/api/
             - ./compose-data/react/:/var/www/html/
             - ./config/php/php.ini:/usr/local/etc/php/php.ini
@@ -59,3 +61,10 @@ services:
             - /sessions
         logging:
             driver: none
+
+    #composer:
+    # restart: 'no'
+    #  image: composer/composer:php7
+    #  command: install
+    #  volumes:
+    #    - .:/app
